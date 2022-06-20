@@ -46,8 +46,20 @@ app.get("/contato", (req, res) => {
     res.render("blog")
 })
 
-app.get("/detalhes", (req, res) => {
+app.get("/palmitoPicado", (req, res) => {
     res.render("single-product")
+})
+
+app.get("/palmitoRodela", (req, res) => {
+  res.render("single-product-2")
+})
+
+app.get("/palmitoTolete", (req, res) => {
+  res.render("single-product-3")
+})
+
+app.get("/quemSomos", (req, res) => {
+  res.render("quemSomos")
 })
 
 app.listen(port, () => console.log(`Servidor rodando em http://localhost:${port}`));
